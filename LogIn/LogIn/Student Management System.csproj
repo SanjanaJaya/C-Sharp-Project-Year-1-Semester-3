@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFABCEE1-1584-429E-B1A8-651055A5EE82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LogIn</RootNamespace>
+    <AssemblyName>LogIn</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Student Management System\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>40962AF72B7222315701D2DF882DEFD49608D300</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LogIn_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>C:\Users\imesh\OneDrive\Documents\Visual Studio 2022\DLL Files New\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="class.Designer.cs">
+      <DependentUpon>class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseteacherDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseteacherDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseteacherDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseteacherDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseteacherDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseteacherDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseteacherDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseteacherDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseteacherDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseteacherDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseteacherDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseteacherDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseteacherDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseteacherDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseteacherDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseteacherDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseteacherDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseteacherDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="examlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="examlogin.Designer.cs">
+      <DependentUpon>examlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="library.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="library.Designer.cs">
+      <DependentUpon>library.cs</DependentUpon>
+    </Compile>
+    <Compile Include="librarylogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="librarylogin.Designer.cs">
+      <DependentUpon>librarylogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="staffemployedetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffemployedetails.Designer.cs">
+      <DependentUpon>staffemployedetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Studentdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studentdashboard.Designer.cs">
+      <DependentUpon>Studentdashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentdetails.Designer.cs">
+      <DependentUpon>studentdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacherdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherdetails.Designer.cs">
+      <DependentUpon>teacherdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacherlogindash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherlogindash.Designer.cs">
+      <DependentUpon>teacherlogindash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_UC\Add New Question.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Teacher_UC\Add New Question.Designer.cs">
+      <DependentUpon>Add New Question.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_UC\studentquestioncs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Teacher_UC\studentquestioncs.Designer.cs">
+      <DependentUpon>studentquestioncs.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="class.resx">
+      <DependentUpon>class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="examlogin.resx">
+      <DependentUpon>examlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="library.resx">
+      <DependentUpon>library.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="librarylogin.resx">
+      <DependentUpon>librarylogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="staffemployedetails.resx">
+      <DependentUpon>staffemployedetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Studentdashboard.resx">
+      <DependentUpon>Studentdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentdetails.resx">
+      <DependentUpon>studentdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherdetails.resx">
+      <DependentUpon>teacherdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherlogindash.resx">
+      <DependentUpon>teacherlogindash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_UC\Add New Question.resx">
+      <DependentUpon>Add New Question.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_UC\studentquestioncs.resx">
+      <DependentUpon>studentquestioncs.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DatabaseteacherDataSet.xsc">
+      <DependentUpon>DatabaseteacherDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseteacherDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseteacherDataSet.xss">
+      <DependentUpon>DatabaseteacherDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet1.xsc">
+      <DependentUpon>DatabaseteacherDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseteacherDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseteacherDataSet1.xss">
+      <DependentUpon>DatabaseteacherDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet2.xsc">
+      <DependentUpon>DatabaseteacherDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseteacherDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseteacherDataSet2.xss">
+      <DependentUpon>DatabaseteacherDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet3.xsc">
+      <DependentUpon>DatabaseteacherDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseteacherDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseteacherDataSet3.xss">
+      <DependentUpon>DatabaseteacherDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet4.xsc">
+      <DependentUpon>DatabaseteacherDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseteacherDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseteacherDataSet4.xss">
+      <DependentUpon>DatabaseteacherDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet5.xsc">
+      <DependentUpon>DatabaseteacherDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseteacherDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseteacherDataSet5.xss">
+      <DependentUpon>DatabaseteacherDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet6.xsc">
+      <DependentUpon>DatabaseteacherDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseteacherDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseteacherDataSet6.xss">
+      <DependentUpon>DatabaseteacherDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet7.xsc">
+      <DependentUpon>DatabaseteacherDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseteacherDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseteacherDataSet7.xss">
+      <DependentUpon>DatabaseteacherDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet8.xsc">
+      <DependentUpon>DatabaseteacherDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseteacherDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseteacherDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseteacherDataSet8.xss">
+      <DependentUpon>DatabaseteacherDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="LogIn_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Databaseteacher.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databaseteacher_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Databaseteacher.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
